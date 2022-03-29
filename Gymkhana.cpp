@@ -10,19 +10,22 @@ class Secretary;
 class Student;
 
 class President {
-public:
-    std::string name;
+private:
     bool permission = false;
 
+public:
+    std::string name;
     President(std::string name) {
         this->name = name;
     }
 };
 
 class Vice_president {
+private:
+    bool permission = false;
+
 public:
     std::string name;
-    bool permission = false;
 
     Vice_president(std::string name) {
         this->name = name;
@@ -30,25 +33,45 @@ public:
 };
 
 class General_secretary {
-public:
-    std::string name;
-    Society type;
+private:
     bool permission = false;
 
-    General_secretary(std::string name, Society type) {
+public:
+    std::string name;
+    std::string type;
+
+    General_secretary(std::string name, std::string type) {
         this->name = name;
         this->type = type;
     }
+
 };
 
 class Secretary {
-public:
-    std::string name;
-    Society Societyname;
+private:
     bool permission = false;
 
-    Secretary(std::string name, Society Societyname) {
+public:
+    std::string name;
+    std::string Societyname;
+
+    Secretary(std::string name, std::string Societyname) {
         this->name = name;
         this->Societyname = Societyname;
     }
+
+
+};
+
+class Student {
+    public:
+        std::string name;
+        int year;
+        std::string branch;
+
+        Student(std::string name, int year, std::string branch) {
+            this->name = name;
+            this->year = year;
+            this->branch = branch;
+        }
 };
