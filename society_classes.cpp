@@ -1,22 +1,27 @@
+#include <iostream>
+#include <string>
+
 class Society {
 public:
     class Tech {
-        class Nueromancers;
-        class RISC;
-        class Nakshatra;
-        class Webd;
+        public:
+            class Nueromancers;
+            class RISC;
+            class Nakshatra;
+            class Webd;
     };
     class Sports {
-        class Badminton;
-        class Basketbal;
-        class Football;
-        class Tennis;
-        class Table_tennis;
-        class Board_games;
-        class Volleyball;
-        class Aquatics;
-        class Atheletics;
-        class Gym;
+        public:
+            class Badminton;
+            class Basketbal;
+            class Football;
+            class Tennis;
+            class Table_tennis;
+            class Board_games;
+            class Volleyball;
+            class Aquatics;
+            class Atheletics;
+            class Gym;
     };
     class Cult {
         class Aaroh;
